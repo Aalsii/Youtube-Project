@@ -31,11 +31,13 @@ header nav {
     display: flex;
     padding: 0 0 0 60px;
 }
-.logo .logo-menu{
+
+.logo .logo-menu {
     margin: 0 0 0 -45px;
     padding: 0 21px 0 0;
     filter: invert(1);
 }
+
 .search-box {
     display: flex;
     align-items: center;
@@ -95,10 +97,12 @@ header nav {
     position: relative;
     right: 40px;
 }
-.signin img{
+
+.signin img {
     padding: 0 21px 0 0;
     filter: invert(1);
 }
+
 .signin button {
     border-radius: 20px;
     padding: 8px 25px 8px 25px;
@@ -107,7 +111,7 @@ header nav {
     font-weight: 500;
     font-size: 12px;
     background: var(--mainbgbackground-color);
-    color: blue;
+    color: white;
     border: 1px solid #5e5e5e;
     cursor: pointer;
 }
@@ -138,7 +142,7 @@ header nav {
 .video-cards {
     width: 80vw;
     height: 344px;
-    background:var(--mainbgbackground-color);
+    background: var(--mainbgbackground-color);
     color: white;
     display: flex;
     justify-content: center;
@@ -163,7 +167,7 @@ header nav {
 .video-play img {
     width: 295px;
     height: 193px;
-    border-radius: 21px;
+    border-radius: 17px;
 }
 
 .video-title {
@@ -221,13 +225,18 @@ header nav {
 
 
 aside {
-    width: 16%;
+    width: 17%;
     height: calc(100vh - 45px);
     background: var(--mainbgbackground-color);
     color: var(--maincolor-color);
-    overflow-y: auto;
-    position: sticky;
+    position: fixed;
     bottom: -17px;
+    overflow: hidden;
+}
+
+aside:hover {
+    overflow: auto;
+    scrollbar-color: transparent transparent;
 }
 
 .first1 {
@@ -241,19 +250,23 @@ aside {
     align-items: center;
     padding: 10px;
     border-radius: 15px;
+    margin: 3px;
 }
 
 .first1 .one:hover {
     background: #3F3F3F;
 }
-.first1 .one img{
+
+.first1 .one img {
     width: 24px;
     padding: 0 20px 0 0px;
     filter: invert(1);
 }
-.first1 .one h4{
+
+.first1 .one h4 {
     font-size: 15.4px;
 }
+
 .line {
     border: 0.1em solid #4a4a4a;
     margin: 0 5px 0 5px;
@@ -267,21 +280,29 @@ aside {
 .btn1 {
     text-align: center;
     padding: 11px 0 11px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn1 button {
     border-radius: 20px;
-    padding: 8px 25px 8px 25px;
+    padding: 1.9px 9px;
     border: none;
     outline: none;
     font-weight: 500;
     font-size: 12px;
     background: var(--mainbgbackground-color);
-    color: blue;
+    color: white;
     border: 1px solid #5e5e5e;
     cursor: pointer;
+    display: flex;
+    align-items: center;
 }
-
+.btn1 button> img{
+padding: 5px;
+    filter: invert(1);
+}
 .explore .hd {
     margin: 5px;
     padding: 6px;
